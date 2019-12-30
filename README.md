@@ -32,7 +32,7 @@ To use this module, add the following call to your code:
 
 ```tf
 module "<layer>_cloudwatch_event_target_<AccountID>" {
-  source = "../../modules/uki-shared-services-terraform-module-cloudwatch-events-target"
+  source = "git::https://github.com/nitinda/terraform-module-aws-cloudwatch-events-target.git?ref=master"
 
   providers = {
     aws = aws.services
@@ -48,7 +48,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
 
 ```tf
 module "<layer>_cloudwatch_event_target_<AccountID>" {
-  source = "../../modules/uki-shared-services-terraform-module-cloudwatch-events-target"
+  source = "git::https://github.com/nitinda/terraform-module-aws-cloudwatch-events-target.git?ref=master"
 
   providers = {
     aws = aws.services
@@ -68,7 +68,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
 
 ```tf
 module "<layer>_cloudwatch_event_target_<AccountID>" {
-  source = "../../modules/uki-shared-services-terraform-module-cloudwatch-events-target"
+  source = "git::https://github.com/nitinda/terraform-module-aws-cloudwatch-events-target.git?ref=master"
 
   providers = {
     aws = aws.services
