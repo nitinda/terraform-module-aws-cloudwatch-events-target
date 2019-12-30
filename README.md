@@ -1,4 +1,4 @@
-# Terraform Module: uki-shared-services-terraform-module-cloudwatch-events-target
+# Terraform Module: terraform-module-aws-cloudwatch-events-target
 
 ## General
 
