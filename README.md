@@ -39,6 +39,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
   }
   
   arn       = "arn:aws:codebuild:eu-central-1:${var.account_id}:project/code-build-ami-builder"
+  rule      = "arn:aws:events:eu-central-1:${var.account_id}:rule/event_rule"
   role_arn  = "arn:aws:iam::${var.account_id}:role/service-role/iam-role-ami-builder-cloudwatch-events"
   target_id = "target-id-code-build-ami-builder"
 }
@@ -55,6 +56,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
   }
   
   arn        = "arn:aws:ecs:eu-central-1:${var.account_id}:cluster/ecs-services"
+  rule       = "arn:aws:events:eu-central-1:${var.account_id}:rule/event_rule"
   role_arn   = "arn:aws:iam::${var.account_id}:role/service-role/iam-role-ami-builder-cloudwatch-events"
   target_id  = "target-id-ecs"
   ecs_target = {
@@ -75,6 +77,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
   }
   
   arn                 = "arn:aws:ssm:${var.region}::document/AWS-RunShellScript"
+  rule                = "arn:aws:events:eu-central-1:${var.account_id}:rule/event_rule"
   role_arn            = "arn:aws:iam::${var.account_id}:role/service-role/iam-role-ami-builder-cloudwatch-events"
   target_id           = "target-id-run-command"
   input               = "{\"commands\":[\"halt\"]}"
