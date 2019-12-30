@@ -127,20 +127,6 @@ module.<module_name>.<output_variable_name>
 If an output variable needs to be exposed on root level in order to be accessed through terraform state file follow the steps below:
 
 - Include the syntax above in the layer outputs.tf terraform file.
-- Add the code snippet below to the variables/global_variables file.
-
-```tf
-data "terraform_remote_state" "<layer_name>" (i.e. "iam_roles_layer") {
-  backend = "s3"
-
-  config {
-    bucket = <bucket_name> (i.e. "uki-s3-global-terraform-state")
-    key    = <state_file_relative_path> (i.e. "env:/Global/2_IAM_Roles/terraform.tfstate")
-    region = <bucket_region> (i.e. "eu-central-1")
-  }
-}
-```
-
 - The output variable is able to be accessed through terraform state file using the syntax below:
 ```tf
 "${data.terraform_remote_state.<layer_name>.<output_variable_name>}"
