@@ -54,7 +54,7 @@ module "<layer>_cloudwatch_event_target_<AccountID>" {
     aws = aws.services
   }
   
-  arn        = "arn:aws:ecs:eu-central-1:<${var.account_id}:cluster/ecs-services"
+  arn        = "arn:aws:ecs:eu-central-1:${var.account_id}:cluster/ecs-services"
   role_arn   = "arn:aws:iam::${var.account_id}:role/service-role/iam-role-ami-builder-cloudwatch-events"
   target_id  = "target-id-ecs"
   ecs_target = {
