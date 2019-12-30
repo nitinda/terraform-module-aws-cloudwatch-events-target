@@ -152,15 +152,11 @@ data "terraform_remote_state" "<layer_name>" (i.e. "iam_roles_layer") {
 
 ### Planned changes
 
-* Custome SSM Patch Baseline needs to set defafult, which is still manual using AWS console.
+* **_None_**
 
-
-### Further Information
-
-[Branching Strategy](https://alm-tuigroup.atlassian.net/wiki/spaces/CPT/pages/802391017/Branching+Strategy)
 
 ---
 
 ## Authors
 
-Deployed and managed by [UKI Cloud Platform Team](uki-cloud-platforms@tui.co.uk)
+Deployed and managed by **_Nitin Das_**
