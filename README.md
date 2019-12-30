@@ -94,13 +94,13 @@ The variables required in order for the module to be successfully called from th
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|-----:|
-| **_target\_id_** | _The unique target assignment ID_ | string | **_Required_** |
-| **_rule_** | _The name of the rule you want to add targets to_ | string | **_Required_** |
-| **_arn_** | _The Amazon Resource Name (ARN) associated of the target_ | string | **_Required_** |
-| **_role\_arn_** | _The ARN associated with the role that is used for target invocation_ | string | **_Required_** |
-| **_input_** | _Valid JSON text passed to the target_ | string | **_Optional_** |
-| **_run\_command\_targets_** | _Parameters used when you are using the rule to invoke Amazon EC2 Run Command_ | any | **_Optional_** |
-| **_ecs\_target_** | _Parameters used when you are using the rule to invoke Amazon ECS Task_ | any | **_Optional_** |
+| **_target\_id_** | _The unique target assignment ID_ | _string_ | **_Required_** |
+| **_rule_** | _The name of the rule you want to add targets to_ | _string_ | **_Required_** |
+| **_arn_** | _The Amazon Resource Name (ARN) associated of the target_ | _string_ | **_Required_** |
+| **_role\_arn_** | _The ARN associated with the role that is used for target invocation_ | _string_ | **_Required_** |
+| **_input_** | _Valid JSON text passed to the target_ | _string_ | **_Optional_** |
+| **_run\_command\_targets_** | _Parameters used when you are using the rule to invoke Amazon EC2 Run Command_ | _any_ | **_Optional_** |
+| **_ecs\_target_** | _Parameters used when you are using the rule to invoke Amazon ECS Task_ | _any_ | **_Optional_** |
 
 
 
